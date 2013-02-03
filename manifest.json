@@ -1,0 +1,37 @@
+﻿{
+  "manifest_version": 2,
+  "name": "Chrome CSRF Guardian",
+  "version": "0.1.0",
+  "description": "It guard your Chrome from CSRF vulnerability.",
+  "icons": {
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "ja",
+  "background": {
+    "scripts": ["scripts/background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_icon": "icons/icon19.png",
+    "default_title": "Guardian"
+  },
+  "web_accessible_resources": ["scripts/guardian.js"],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": ["scripts/content_script.js"],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+  "options_page": "pages/options.html",
+  "permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "content_security_policy": "script-src 'self'; object-src 'self'"
+}

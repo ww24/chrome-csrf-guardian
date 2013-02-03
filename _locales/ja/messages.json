@@ -1,0 +1,11 @@
+{
+  "target": {
+    "message": "宛先"
+  },
+  "data": {
+    "message": "データ"
+  },
+  "dialog_message": {
+    "message": "次のデータが外部に送られようとしています。"
+  }
+}
