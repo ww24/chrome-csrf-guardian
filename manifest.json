@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Chrome CSRF Guardian",
   "version": "0.1.0",
-  "description": "It guard your Chrome from CSRF vulnerability.",
+  "description": "It guards your Chrome from CSRF vulnerability.",
   "icons": {
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
